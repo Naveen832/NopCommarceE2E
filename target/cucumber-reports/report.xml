@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="25.104" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Login Functionality" name="Login data driven - #1.1" time="7.372">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinitions.steps.page_title_should_be(steps.java:219)
+	at ✽.page title should be "Dashboard / nopCommerce administration"(file:///C:/Users/NVISWANA/eclipse-workspace1/NopCommerace/./Features/Loginfunction.feature:20)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user launch the browser...............................................passed
+When user open url "https://admin-demo.nopcommerce.com/login"...............passed
+And user enter email as "admin@yourstore.com1" and password as "admin"......passed
+And click on login button...................................................passed
+Then page title should be "Dashboard / nopCommerce administration"..........failed
+When user click on logout button............................................skipped
+Then page title should be1 "Admin area demo";...............................skipped
+And close the browser.......................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login data driven - #1.2" time="17.263">
+<system-out><![CDATA[
+Given user launch the browser...............................................passed
+When user open url "https://admin-demo.nopcommerce.com/login"...............passed
+And user enter email as "admin@yourstore.com" and password as "admin".......passed
+And click on login button...................................................passed
+Then page title should be "Dashboard / nopCommerce administration"..........passed
+When user click on logout button............................................passed
+Then page title should be1 "Admin area demo";...............................passed
+And close the browser.......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
